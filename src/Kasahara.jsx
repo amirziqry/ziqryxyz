@@ -71,6 +71,7 @@ export default function Kasahara() {
         />
         <StaticOverlay opacity={0.15} />
       </div>
+      
 
       <div className="max-w-lg mx-auto px-6 py-12">
         <p className="text-xs tracking-widest uppercase text-gray-400 mb-4">why i created kasahara?</p>
