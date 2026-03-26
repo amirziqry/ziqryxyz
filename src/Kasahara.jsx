@@ -1,14 +1,13 @@
 import kasaharaLogo from "./assets/kasahara-logo.png"
-import banner from "../src/assets/banner1.PNG"
-import graphic1 from "../src/assets/graphic1.PNG"
-import graphic2 from "../src/assets/graphic2.PNG"
-import graphic3 from "../src/assets/graphic3.PNG"
-import graphic4 from "../src/assets/graphic4.PNG"
+import banner from "../assets/banner1.PNG"
+import graphic1 from "../assets/graphic1.PNG"
+import graphic2 from "../assets/graphic2.PNG"
+import graphic3 from "../assets/graphic3.PNG"
+import graphic4 from "../assets/graphic4.PNG"
 import { useEffect, useRef } from "react"
-import photo1 from "../src/assets/photo1.JPG"
-import photo2 from "../src/assets/photo2.JPG"
-import photo3 from "../src/assets/photo3.JPG"
-import shortFilm from "../src/assets/shortfilm.mp4"
+import photo1 from "../assets/photo1.JPG"
+import photo2 from "../assets/photo2.JPG"
+import photo3 from "../assets/photo3.JPG"
 import StaticOverlay from "./components/StaticOverlay"
 
 const photos = [photo1, photo2, photo3]
@@ -102,11 +101,8 @@ export default function Kasahara() {
           className="block group relative overflow-hidden mb-4"
         >
          <video
-  src={shortFilm}
-  autoPlay
-  loop
-  muted
-  playsInline
+  src=""
+  autoPlay loop muted playsInline
   className="w-full object-cover"
   style={{ aspectRatio: "16/9", filter: "grayscale(20%)" }}
 />
