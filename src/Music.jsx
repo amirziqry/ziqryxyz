@@ -1,8 +1,8 @@
 import { useState } from "react"
-import cycles from '../assets/cycles.jpg';
-import mythical from '../assets/mythical.png';
-import bakerGirl from '../assets/bakergirl.JPG';
-import poolside from '../assets/poolside.JPG';
+import cycles from './assets/cycles.jpg';
+import mythical from './assets/mythical.png';
+import bakerGirl from './assets/bakergirl.JPG';
+import poolside from './assets/poolside.JPG';
 
 const releases = [
   {

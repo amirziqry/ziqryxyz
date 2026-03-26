@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
-import heroImage from '../assets/hero.jpg';
-import music from '../assets/music.JPG';
-import kasahara from '../assets/kasahara.JPG';
+import heroImage from './assets/hero.jpg';
+import music from './assets/music.JPG';
+import kasahara from './assets/kasahara.JPG';
 import StaticOverlay from "./components/StaticOverlay"
 
 export default function Home({ navigate }) {
