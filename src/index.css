@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "AlteHaas";
+  src: url("./fonts/AlteHaasGroteskRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AlteHaas";
+  src: url("./fonts/AlteHaasGroteskBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  font-family: "AlteHaas", Helvetica, Arial, sans-serif;
+}
+* {
+  letter-spacing: -0.02em;
+}
