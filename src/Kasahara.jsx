@@ -9,6 +9,7 @@ import photo1 from "./assets/photo1.JPG"
 import photo2 from "./assets/photo2.JPG"
 import photo3 from "./assets/photo3.jpg"
 import StaticOverlay from "./components/StaticOverlay"
+import undefinedFilm from "./assets/undefined.mp4"
 
 const photos = [photo1, photo2, photo3]
 
@@ -102,7 +103,7 @@ export default function Kasahara() {
           className="block group relative overflow-hidden mb-4"
         >
          <video
-  src=""
+  src={undefinedFilm}
   autoPlay loop muted playsInline
   className="w-full object-cover"
   style={{ aspectRatio: "16/9", filter: "grayscale(20%)" }}
