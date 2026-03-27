@@ -7,7 +7,7 @@ import graphic4 from "./assets/graphic4.PNG"
 import { useEffect, useRef } from "react"
 import photo1 from "./assets/photo1.JPG"
 import photo2 from "./assets/photo2.JPG"
-import photo3 from "./assets/photo3.JPG"
+import photo3 from "./assets/photo3.jpg"
 import StaticOverlay from "./components/StaticOverlay"
 
 const photos = [photo1, photo2, photo3]
