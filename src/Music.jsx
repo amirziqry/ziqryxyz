@@ -11,7 +11,7 @@ const releases = [
     year: "2025",
     type: "EP",
     cover: cycles,
-    url: "https://open.spotify.com/album/2oujPYx4IJxxNaoM075bKR?si=fy2SteXGQB6V51zZMnculQ",
+    url: "https://share.amuse.io/album/ziqry-cycles",
     tracks: 5,
   },
   {
@@ -20,7 +20,7 @@ const releases = [
     year: "2025",
     type: "Single",
     cover: mythical,
-    url: "https://open.spotify.com/album/6dNxU9gXCmIRlZejPKNJAm?si=qgIbOMOvRgSt40FqnYAzmw",
+    url: "https://share.amuse.io/track/ziqry-mythical",
     tracks: 2,
   },
   {
@@ -29,7 +29,7 @@ const releases = [
     year: "2023",
     type: "Album",
     cover: bakerGirl,
-    url: "https://open.spotify.com/album/1eYJ2HxcC3ARpsd3gfcbHo?si=xpM2CjheSVa8M7zfRTGCLg",
+    url: "https://bfan.link/bakergirl",
     tracks: 9,
   },
   {
@@ -38,7 +38,7 @@ const releases = [
     year: "2023",
     type: "Single",
     cover: poolside,
-    url: "https://open.spotify.com/album/459gkoLzipTL5UCMWxFxn9?si=3fZgYbsRTnyIuQMrlWDG1A",
+    url: "https://share.amuse.io/track/ziqry-poolside",
     tracks: 1,
   },
 ]
