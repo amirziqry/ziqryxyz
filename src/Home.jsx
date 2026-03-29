@@ -105,7 +105,7 @@ export default function Home({ navigate }) {
           <div className="pt-11 text-center">
             <div>
               <p className="text-xs tracking-widest uppercase text-gray-400 mb-1">Social</p>
-              <p className="text-sm font-light">Instagram · YouTube · Soundcloud · Letterboxd</p>
+              <p className="text-sm font-light">Instagram · YouTube · Soundcloud · Letterboxd . Spotify</p>
             </div>
             <span className="text-lg mt-0.5 opacity-30 group-hover:opacity-100 group-hover:translate-x-1 transition-all">›</span>
           </div>
