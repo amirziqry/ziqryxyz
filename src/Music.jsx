@@ -15,7 +15,7 @@ import certainDays from './assets/certaindays.JPG';
 const releases = [
   {
     id: 1,
-    title: "CYCLES EP",
+    title: "CYCLES",
     year: "2025",
     type: "EP",
     cover: cycles,
@@ -96,7 +96,7 @@ const releases = [
   },
   {
     id: 10,
-    title: "POMEGRENATE JUICE",
+    title: "POMEGRANATE JUICE",
     year: "2021",
     type: "Album",
     cover: pomegrenate,
