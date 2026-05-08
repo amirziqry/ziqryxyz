@@ -8,7 +8,7 @@ import saltSugar from './assets/saltsugar.JPG';
 import lofi from './assets/lofi.JPG';
 import sbs from './assets/sbs.JPG';
 import metamemory from './assets/metamemory.JPG';
-import pomegrenate from './assets/pomegrenate.JPG';
+import pomegrenate from './assets/pomegrenate.jpg';
 import andromeda from './assets/andromeda.JPG';
 import certainDays from './assets/certaindays.JPG';
 
