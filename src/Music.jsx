@@ -3,14 +3,14 @@ import cycles from './assets/cycles.jpg';
 import mythical from './assets/mythical.png';
 import bakerGirl from './assets/bakergirl.JPG';
 import poolside from './assets/poolside.JPG';
-import newDimension from './assets/newdimension.jpg';
-import saltSugar from './assets/saltsugar.jpg';
-import lofi from './assets/lofi.jpg';
-import sbs from './assets/sbs.jpg';
-import metamemory from './assets/metamemory.jpg';
-import pomegrenate from './assets/pomegrenate.jpg';
-import andromeda from './assets/andromeda.jpg';
-import certainDays from './assets/certaindays.jpg';
+import newDimension from './assets/newdimension.JPG';
+import saltSugar from './assets/saltsugar.JPG';
+import lofi from './assets/lofi.JPG';
+import sbs from './assets/sbs.JPG';
+import metamemory from './assets/metamemory.JPG';
+import pomegrenate from './assets/pomegrenate.JPG';
+import andromeda from './assets/andromeda.JPG';
+import certainDays from './assets/certaindays.JPG';
 
 const releases = [
   {
