@@ -3,6 +3,14 @@ import cycles from './assets/cycles.jpg';
 import mythical from './assets/mythical.png';
 import bakerGirl from './assets/bakergirl.JPG';
 import poolside from './assets/poolside.JPG';
+import newDimension from './assets/newdimension.jpg';
+import saltSugar from './assets/saltsugar.jpg';
+import lofi from './assets/lofi.jpg';
+import sbs from './assets/sbs.jpg';
+import metamemory from './assets/metamemory.jpg';
+import pomegrenate from './assets/pomegrenate.jpg';
+import andromeda from './assets/andromeda.jpg';
+import certainDays from './assets/certaindays.jpg';
 
 const releases = [
   {
@@ -41,6 +49,78 @@ const releases = [
     url: "https://share.amuse.io/track/ziqry-poolside",
     tracks: 1,
   },
+  {
+    id: 5,
+    title: "NEW DIMENSION",
+    year: "2022",
+    type: "Album",
+    cover: newDimension,
+    url: "https://youtu.be/K2J79c54pZE?si=YFJewkCNwizmGSnM",
+    tracks: 10,
+  },
+  {
+    id: 6,
+    title: "SALTSUGAR",
+    year: "2022",
+    type: "EP",
+    cover: saltSugar,
+    url: "https://youtube.com/playlist?list=PLMFRfWG5Y_3zlTv1nd5-1oLLO-Mb4jv-K&si=65asS4RFJMfwxeli",
+    tracks: 4,
+  },
+  {
+    id: 7,
+    title: "BOREDOM TAPES : LOFI",
+    year: "2022",
+    type: "EP",
+    cover: lofi,
+    url: "https://soundcloud.com/user-23737436/sets/boredom-tapes-l0-fi?si=82dca8d8a08a4d6b84505562d67591b7&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    tracks: 4,
+  },
+  {
+    id: 8,
+    title: "SOME BEDROOM SONGS",
+    year: "2022",
+    type: "Album",
+    cover: sbs,
+    url: "https://soundcloud.com/user-23737436/sets/some-bedroom-songs?si=356fdb9cc3024e20a34a0ce3c3cc81d2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    tracks: 10,
+  },
+  {
+    id: 9,
+    title: "METAMEMORY",
+    year: "2021",
+    type: "EP",
+    cover: metamemory,
+    url: "https://soundcloud.com/user-23737436/sets/metamemory?si=117519c222084ca8a2e37b1542fe7397&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    tracks: 4,
+  },
+  {
+    id: 10,
+    title: "POMEGRENATE JUICE",
+    year: "2021",
+    type: "Album",
+    cover: pomegrenate,
+    url: "https://soundcloud.com/zqry/sets/pomegranate-juice?si=bdb7fc9a499a483194ab0a22aa0f9b97&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    tracks: 10,
+  },
+  {
+    id: 11,
+    title: "ANDROMEDA, SO CLOSE YET SO FAR",
+    year: "2021",
+    type: "Album",
+    cover: andromeda,
+    url: "https://soundcloud.com/zqry/sets/andromeda?si=f11cec2ae3f844be96c825befa3fa0b5&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    tracks: 8,
+  },
+  {
+    id: 12,
+    title: "CERTAIN DAYS",
+    year: "2020",
+    type: "Album",
+    cover: certainDays,
+    url: "https://soundcloud.com/zqry/sets/project-3?si=425c7eec1aca4cbab029522e560f5d36&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    tracks: 10,
+  }
 ]
 
 const platforms = ["Spotify", "Apple Music", "SoundCloud", "Tidal", "YouTube Music"]
