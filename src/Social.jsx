@@ -17,13 +17,7 @@ function IconYouTube() {
   )
 }
 
-function IconSoundCloud() {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
-      <path d="M11.56 8.87V17h8.76c1.25 0 2.18-.95 2.18-2.08 0-1.08-.87-1.96-1.96-2.04C20.7 10.3 18.5 8 15.78 8c-1.4 0-2.65.56-3.57 1.47-.2-.38-.6-.6-.65-.6zm-1.5 1.5c-.17 0-.3.13-.3.3v5.7c0 .17.13.3.3.3.17 0 .3-.13.3-.3v-5.7c0-.17-.13-.3-.3-.3zm-2 .8c-.17 0-.3.13-.3.3v4.9c0 .17.13.3.3.3.17 0 .3-.13.3-.3v-4.9c0-.17-.13-.3-.3-.3zm-2 .8c-.17 0-.3.13-.3.3v4.1c0 .17.13.3.3.3.17 0 .3-.13.3-.3v-4.1c0-.17-.13-.3-.3-.3zm-2 .5c-.17 0-.3.13-.3.3v3.1c0 .17.13.3.3.3.17 0 .3-.13.3-.3v-3.1c0-.17-.13-.3-.3-.3zm-1.8 1c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z" />
-    </svg>
-  )
-}
+
 
 function IconLetterboxd() {
   return (
@@ -46,7 +40,6 @@ function IconSpotify() {
 const platforms = [
   { id: "instagram", label: "Instagram", handle: "@amir.ziqry", url: "https://www.instagram.com/amir.ziqry/", Icon: IconInstagram },
   { id: "youtube", label: "YouTube", handle: "@pierremiyazaki", url: "https://www.youtube.com/@pierremiyazaki", Icon: IconYouTube },
-  { id: "soundcloud", label: "SoundCloud", handle: "@zqry", url: "https://soundcloud.com/zqry", Icon: IconSoundCloud },
   { id: "letterboxd", label: "Letterboxd", handle: "@amirziqry", url: "https://letterboxd.com/amirziqry/", Icon: IconLetterboxd },
   { id: "spotify", label: "Spotify", handle: "@ziqry", url: "https://open.spotify.com/user/ykqvuuanrzmf8qblm5vwjmq4s?si=e3659c9d26b041f2", Icon: IconSpotify },  // 👈 add this
 ]
