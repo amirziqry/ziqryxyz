@@ -4,50 +4,36 @@ import graphic1 from "./assets/graphic1.PNG"
 import graphic2 from "./assets/graphic2.PNG"
 import graphic3 from "./assets/graphic3.PNG"
 import graphic4 from "./assets/graphic4.PNG"
-import { useEffect, useRef } from "react"
 import photo1 from "./assets/photo1.JPG"
 import photo2 from "./assets/photo2.JPG"
 import photo3 from "./assets/photo3.jpg"
 import StaticOverlay from "./components/StaticOverlay"
-import undefinedFilm from "./assets/undefined.mp4"
+import { useState } from "react"
 
 const photos = [photo1, photo2, photo3]
 
-const tags = ["Creative Direction", "Product Development", "Graphic Design", "Filmmaking", "Video Editing", "Photography", "Logistics", "Social Media", "Copywriting", "Sales", "Customer Service", "Finance", "Web Development"]
+const tags = [
+  "Creative Direction", "Product Development", "Graphic Design", 
+  "Filmmaking", "Video Editing", "Photography", "Logistics", 
+  "Social Media", "Copywriting", "Sales", "Customer Service", 
+  "Finance", "Web Development"
+]
 
+// React-native fade in without unstable DOM manipulation
 function FadeInImage({ src, alt, style = {}, className = "" }) {
-  const ref = useRef(null)
-
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          el.style.opacity = "1"
-          el.style.transform = "translateY(0)"
-          observer.disconnect()
-        }
-      },
-      { threshold: 0.1 }
-    )
-    observer.observe(el)
-    return () => observer.disconnect()
-  }, [])
+  const [loaded, setLoaded] = useState(false)
 
   return (
     <img
-      ref={ref}
       src={src}
       alt={alt}
-      className={className}
       loading="lazy"
-      style={{
-        opacity: 0,
-        transform: "translateY(24px)",
-        transition: "opacity 0.6s ease, transform 0.6s ease",
-        ...style,
-      }}
+      decoding="async"
+      onLoad={() => setLoaded(true)}
+      className={`${className} transition-all duration-700 ease-out ${
+        loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+      }`}
+      style={style}
     />
   )
 }
@@ -60,20 +46,23 @@ export default function Kasahara() {
         <span className="text-xs tracking-widest uppercase text-gray-400">Kasahara</span>
       </div>
 
+      {/* Banner */}
       <div
-        className="w-full overflow-hidden"
+        className="w-full relative overflow-hidden"
         style={{ height: "55vw", maxHeight: "600px", minHeight: "240px" }}
       >
         <img
           src={banner}
           alt="Kasahara"
+          fetchPriority="high"
+          decoding="async"
           className="w-full h-full object-cover object-center"
           style={{ filter: "grayscale(15%)" }}
         />
         <StaticOverlay opacity={0.15} />
       </div>
-      
 
+      {/* About */}
       <div className="max-w-lg mx-auto px-6 py-12">
         <p className="text-xs tracking-widest uppercase text-gray-400 mb-4">why i created kasahara?</p>
         <p className="text-base font-light leading-relaxed mb-4">
@@ -94,20 +83,25 @@ export default function Kasahara() {
 
       <div className="border-t border-gray-200 mx-6" />
 
-      <div className="border-b border-gray-200 px-6 py-3 text-center">
+      {/* Visual Film Section */}
+      <div className="border-b border-gray-200 px-6 py-12 text-center">
         <p className="text-xs tracking-widest uppercase text-gray-400 mb-6">visual Film</p>
         <a
           href="https://www.instagram.com/reel/DKVzMNlhosf/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
           target="_blank"
           rel="noopener noreferrer"
-          className="block group relative overflow-hidden mb-4"
+          className="block group relative overflow-hidden mb-4 max-w-xl mx-auto"
         >
-         <video
-  src={undefinedFilm}
-  autoPlay loop muted playsInline
-  className="w-full object-cover"
-  style={{ aspectRatio: "16/9", filter: "grayscale(20%)" }}
-/>
+          <video
+            src="/videos/undefined.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            className="w-full object-cover"
+            style={{ aspectRatio: "16/9", filter: "grayscale(20%)" }}
+          />
           <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <div className="border border-black bg-white w-12 h-12 flex items-center justify-center">
@@ -133,7 +127,7 @@ export default function Kasahara() {
 
       <div className="border-t border-gray-200 mx-6" />
 
-      {/* Graphic Design — one per row, natural ratio */}
+      {/* Graphic Design */}
       <div className="max-w-lg mx-auto px-6 py-12">
         <p className="text-xs tracking-widest uppercase text-gray-400 mb-6">Graphics</p>
         <div className="flex flex-col gap-6">
@@ -142,8 +136,8 @@ export default function Kasahara() {
               <FadeInImage
                 src={src}
                 alt={`Design ${i + 1}`}
-                className="w-full h-auto"
-                style={{ filter: "grayscale(10%)", display: "block" }}
+                className="w-full h-auto block"
+                style={{ filter: "grayscale(10%)" }}
               />
               {i < 3 && <div className="border-b border-gray-100 mt-6" />}
             </div>
@@ -153,7 +147,7 @@ export default function Kasahara() {
 
       <div className="border-t border-gray-200 mx-6" />
 
-      {/* Photography — one per row, natural ratio */}
+      {/* Photography */}
       <div className="max-w-lg mx-auto px-6 py-12">
         <p className="text-xs tracking-widest uppercase text-gray-400 mb-6">Photos</p>
         <div className="flex flex-col gap-6">
@@ -162,8 +156,8 @@ export default function Kasahara() {
               <FadeInImage
                 src={src}
                 alt={`Project ${i + 1}`}
-                className="w-full h-auto"
-                style={{ filter: "grayscale(15%)", display: "block" }}
+                className="w-full h-auto block"
+                style={{ filter: "grayscale(15%)" }}
               />
               {i < photos.length - 1 && <div className="border-b border-gray-100 mt-6" />}
             </div>
@@ -171,6 +165,7 @@ export default function Kasahara() {
         </div>
       </div>
 
+      {/* Footer Logo Link */}
       <div className="border-t border-gray-200">
         <a
           href="https://kasahara.co"
