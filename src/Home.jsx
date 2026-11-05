@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import heroImage from './assets/hero.jpg'
-import profileImage from './assets/profile.jpg'
+import profileImage from './assets/profile.JPG'
 import StaticOverlay from "./components/StaticOverlay"
 
 export default function Home({ navigate }) {
