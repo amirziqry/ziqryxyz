@@ -29,7 +29,7 @@ export default function Home({ navigate }) {
   }, [])
 
   return (
-    <div className="pt-11 font-['Alte_Haas_Grotesk',_sans-serif] text-[#1a38b8] selection:bg-[#1a38b8] selection:text-white">
+    <div className="pt-11 font-['Alte_Haas_Grotesk',sans-serif] text-[#1a38b8] selection:bg-[#1a38b8] selection:text-white">
 
       {/* Hero section */}
       <div className="w-full relative">
@@ -46,7 +46,7 @@ export default function Home({ navigate }) {
 
       {/* Date / time bar */}
       <div className="border-b border-gray-200 px-6 py-3 flex items-center justify-center">
-        <span className="text-xs tracking-widest text-gray-400 uppercase font-['Alte_Haas_Grotesk',_sans-serif]">
+        <span className="text-xs tracking-widest text-gray-400 uppercase font-['Alte_Haas_Grotesk',sans-serif]">
           {date}&nbsp;&nbsp;{time}
         </span>
       </div>
@@ -85,9 +85,9 @@ export default function Home({ navigate }) {
 
           {/* Right Column: Facts Listing in Alte Haas Grotesk */}
           <div className="lg:col-span-6 flex flex-col justify-between space-y-12">
-            <div className="font-['Alte_Haas_Grotesk',_sans-serif] text-[16px] leading-[1.45] tracking-normal font-normal">
+            <div className="font-['Alte_Haas_Grotesk',sans-serif] text-[16px] leading-[1.45] tracking-normal font-normal">
               <p className="text-[17px] mb-2">Facts:</p>
-              <ul className="space-y-[4px]">
+              <ul className="space-y-1">
                 <li className="flex items-start">
                   <span className="mr-2">–</span>
                   <span>Currently freelancing & part-timing as a UI/UX designer and Frontend Developer</span>
@@ -135,7 +135,7 @@ export default function Home({ navigate }) {
       </div>
 
       {/* Footer */}
-      <div className="border-t border-gray-200 px-6 py-5 flex items-center justify-center gap-6 font-['Alte_Haas_Grotesk',_sans-serif]">
+      <div className="border-t border-gray-200 px-6 py-5 flex items-center justify-center gap-6 font-['Alte_Haas_Grotesk',sans-serif]">
         <span className="text-xs tracking-widest text-gray-300 uppercase">
           © {new Date().getFullYear()}
         </span>
